@@ -1,17 +1,13 @@
 # Python package
-- task: PythonScript@0
-  inputs:
-    scriptSource: 'inline'
-    script: 'print("This is a Python task")'
 # Create and test a Python package on multiple Python versions.
 # Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- master
+- main
 
 pool:
-  vmImage: ubuntu-latest
+  ubuntu-latest
 strategy:
   matrix:
     Python27:
