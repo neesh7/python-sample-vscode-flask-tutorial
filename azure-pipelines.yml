@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  ubuntu-latest
+  windows-latest
 strategy:
   matrix:
     Python27:
